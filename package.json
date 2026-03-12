@@ -1,0 +1,38 @@
+{
+  "name": "@goastian/mw-bitcoin-wallet",
+  "version": "1.3.1",
+  "description": "Bitcoin Wallet for Midori Wallet",
+  "author": "Midori Wallet <support@coin.space> (https://astian.org/midori-browser/wallet/)",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./symbols": "./lib/symbols.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/midoriwallet/mw-bitcoin-wallet.git"
+  },
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives .",
+    "test": "mocha test --reporter spec"
+  },
+  "dependencies": {
+    "@noble/curves": "^1.0.0",
+    "@noble/hashes": "^1.3.0",
+    "@scure/base": "^1.1.1",
+    "@scure/bip32": "^1.3.0",
+    "@scure/btc-signer": "^1.4.0",
+    "cashaddr": "^1.1.0"
+  },
+  "peerDependencies": {
+    "@goastian/mw-common": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.27.0",
+    "@goastian/eslint-config-mw": "^3.0.1",
+    "mocha": "^11.4.0",
+    "sinon": "^21.0.0"
+  }
+}
